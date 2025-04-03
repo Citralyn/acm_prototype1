@@ -1,0 +1,32 @@
+h1 {
+    font-family: "VT323", monospace;
+}
+
+.homeLogo {
+    height: 70vh;
+}
+
+.centerImageBg {
+    //background: linear-gradient(#181821,#0e0d12);
+    background-image: url("temporary_math_bg2.webp");
+}
+
+@for $i from 1 through 20 {
+    .spacing-y-#{$i} {
+        height: $i * 5vh;
+    }
+  }
+
+.new-content {
+    position: absolute;
+    background: linear-gradient(#91c5db, #dff0f7);
+    height: 150vh;
+    width: 100vw;
+    top: 7%;
+    z-index: 0;
+}
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
