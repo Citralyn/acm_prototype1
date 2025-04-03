@@ -2,6 +2,7 @@
   "name": "frontend",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://Citralyn.github.io/acm_prototype1/",
   "type": "module",
   "scripts": {
     "predeploy" : "npm run build",
