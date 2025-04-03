@@ -1,6 +1,7 @@
 import Image from "react-bootstrap/Image";
 import { motion } from 'framer-motion';
 import React, { useState, useEffect } from 'react';
+import Col from "react-bootstrap/Col"; 
 
 function ExtraInfo() {
     return(
@@ -10,7 +11,30 @@ function ExtraInfo() {
 
 function AboutACM() {
     return(
-        <h1>yas queen</h1>
+        <div className="aboutSection">
+            <h1>What is&nbsp; 
+                <span className="specialTitle">
+                    <span style={{color: "red"}} className="letter" full-expansion="Association">
+                        A
+                    </span>
+                    <span className="letter" full-expansion="for Computing">
+                        C
+                    </span>
+                    <span className="letter" full-expansion="Machinery">
+                        M
+                    </span>
+                </span>
+            ?</h1>
+            <div className="d-flex justify-content-evenly align-items-center">
+                <Col>
+                <h1>hey</h1>
+                </Col>
+            <Col>
+            <Image className="graph" src="temporary_math_bg.jpg"></Image>
+            </Col>
+            </div>
+           
+        </div>
     )
 }
 
@@ -22,7 +46,7 @@ function CenterImage() {
                 <Image className="homeLogo" src="acm_logo.svg"></Image>
             </div>
 
-            <div className="text-center">
+            <div className="text-center text-light">
             <h1>Wednesdays 6-8pm</h1>
             <h1>DBH 3011</h1>
             
