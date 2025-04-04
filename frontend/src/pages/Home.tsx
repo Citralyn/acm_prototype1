@@ -50,13 +50,13 @@ function AboutACM() {
         <div className="aboutSection">
             <h1 className="whatIsHeader">What is&nbsp; 
                 <span className="specialTitle">
-                    <span className="txt-color-yellow letter" full-expansion="Association">
+                    <span className="txt-color-classic-blue letter" full-expansion="Association">
                         A
                     </span>
-                    <span className="txt-color-yellow letter" full-expansion="for Computing">
+                    <span className="txt-color-orange letter" full-expansion="for Computing">
                         C
                     </span>
-                    <span className="txt-color-yellow letter" full-expansion="Machinery">
+                    <span className="txt-color-classic-blue letter" full-expansion="Machinery">
                         M
                     </span>
                 </span>
