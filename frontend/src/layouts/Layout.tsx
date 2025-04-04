@@ -10,12 +10,12 @@ export default function Layout() {
     <div>
 <Navbar expand="lg" className="bg-body-tertiary">
             <Navbar.Brand className="nav-brand" href="#">
-                <Image src="acm_logo.svg"></Image>
+            &nbsp;<Image src="acm_logo.svg"></Image>
                 ACM @ UCI
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="acm-navbar-nav" />
             <Navbar.Collapse id="acm-navbar-nav">
-                <Nav className="mx-auto text-center">
+                <Nav className="text-center">
                     <Nav.Link className="nav-font" href="/">
                         Home
                     </Nav.Link>

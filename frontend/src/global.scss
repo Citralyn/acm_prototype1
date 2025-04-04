@@ -1,3 +1,13 @@
+html {
+    overflow-x: hidden;
+}
+
+#acm-navbar-nav {
+    display: flex;
+    justify-content: end;
+    margin-right: 5vw;
+}
+
 h1 {
     font-family: "VT323", monospace;
 }
@@ -17,10 +27,33 @@ h1 {
     }
   }
 
+$color-map: (
+    classic-red: #cf3e34,
+    classic-blue: #4c83ba,
+    classic-yellow: #dbd056,
+red: #234FE2,
+green: #A2D43B,
+blue: #D8329F,
+yellow: #FF773C,
+purple: #4E9F58,
+orange: #FABC43,
+pink: #D76AD7,
+gray: #9B9B9B
+);
+
+@each $name, $color in $color-map {
+    .bg-color-#{$name} {
+      background-color: $color;
+    }
+    .txt-color-#{$name} {
+        color: $color;
+    }
+}
+
 .new-content {
     position: absolute;
     background-color: black;
-    height: 150vh;
+    height: 160vh;
     width: 100vw;
     top: 7%;
     z-index: 0;
@@ -34,8 +67,57 @@ h1 {
     z-index: 1;
 }
 
-.graph {
+.whatIsHeader {
+    color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 2vw;
 }
+
+.aboutParagraph {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 54vh;
+    background-color: #3e3f40;
+    color: white;
+    font-family: "Cutive Mono", monospace;
+}
+.extraSection {
+    position: absolute;
+    width: 100vw;
+    height: 35vh;
+    background-color: black;
+    text-align: center;
+    top: 100%;
+    z-index: 1;
+    color: white;
+}
+
+.extraContent {
+    width: 15vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5vw;
+    border: 2px solid black;
+}
+
+.extraContent:hover {
+    border-color: yellow;
+    
+}
+.extraContent:hover > .specialExtra{
+    display: block;
+}
+
+.specialExtra {
+    display: none;
+}
+
 
 /*testing*/
 .specialTitle {
@@ -60,7 +142,7 @@ h1 {
     opacity: 0;
     transition: opacity 0.3s ease, visibility 0.3s ease;
     font-size: 16px;
-    color: #007bff;
+    font-family: 'Courier New', Courier, monospace;
   }
   
   .letter:hover::after {
@@ -70,5 +152,5 @@ h1 {
   
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
