@@ -1,14 +1,10 @@
 import Image from "react-bootstrap/Image";
 import { motion } from 'framer-motion';
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Col from "react-bootstrap/Col"; 
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button"
 import Plot from 'react-plotly.js';
-import { create, all } from 'mathjs'
-
-const config = { }
-const math = create(all, config)
 
 function ExtraInfo() {
     return(
