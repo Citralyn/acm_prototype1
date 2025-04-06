@@ -1,6 +1,6 @@
 import Image from "react-bootstrap/Image";
-import { motion } from 'framer-motion';
-import { useState, useEffect } from 'react';
+//import { motion } from 'framer-motion';
+//import { useState, useEffect } from 'react';
 import Col from "react-bootstrap/Col"; 
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button"
