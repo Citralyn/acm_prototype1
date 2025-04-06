@@ -17,7 +17,6 @@ h1 {
 }
 
 .centerImageBg {
-    //background: linear-gradient(#181821,#0e0d12);
     background-image: url("/zeroes_and_ones.jpeg");
     background-size: 50%;
 }
@@ -32,14 +31,14 @@ $color-map: (
     classic-red: #cf3e34,
     classic-blue: #4c83ba,
     classic-yellow: #dbd056,
-red: #234FE2,
-green: #A2D43B,
-blue: #D8329F,
-yellow: #FF773C,
-purple: #4E9F58,
-orange: #FABC43,
-pink: #D76AD7,
-gray: #9B9B9B
+    red: #234FE2,
+    green: #A2D43B,
+    blue: #D8329F,
+    yellow: #FF773C,
+    purple: #4E9F58,
+    orange: #FABC43,
+    pink: #D76AD7,
+    gray: #9B9B9B
 );
 
 @each $name, $color in $color-map {
@@ -52,7 +51,6 @@ gray: #9B9B9B
 }
 
 .new-content {
-    position: absolute;
     background-color: black;
     height: 160vh;
     width: 100vw;
@@ -61,11 +59,11 @@ gray: #9B9B9B
 }
 
 .aboutSection {
-    position: absolute;
     width: 100vw;
     text-align: center;
     top: 30%;
     z-index: 1;
+    background-color: black;
 }
 
 .whatIsHeader {
@@ -76,17 +74,22 @@ gray: #9B9B9B
     margin-left: 2vw;
 }
 
-.aboutParagraph {
+.aboutParagraphBG {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 54vh;
-    background-color: #3e3f40;
-    color: white;
+    height: 65vh;
+    width: 120vw;
+    background-image: url("/vecteezy_scroll.png");
+    background-size: 100% 100%;
+}
+
+.aboutParagraph {
     font-family: "Cutive Mono", monospace;
+    margin-left: 8vw;
+    margin-right: 8vw;
 }
 .extraSection {
-    position: absolute;
     width: 100vw;
     height: 35vh;
     background-color: black;

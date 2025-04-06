@@ -48,6 +48,7 @@ function AboutACM() {
 
     return(
         <div className="aboutSection">
+            <div className="spacing-y-4"></div>
             <h1 className="whatIsHeader">What is&nbsp; 
                 <span className="specialTitle">
                     <span className="txt-color-classic-blue letter" full-expansion="Association">
@@ -97,12 +98,10 @@ function AboutACM() {
               }} }}
       />
                 </Col>
-                <Col>
-                <div style={{backgroundColor: "#3e3f40", height: "2vh"}}></div>
-                <div className="aboutParagraph my-1">
-                    <p className="mx-4">ACM@UCI is UCI's official competitive programming club, where coders of all kinds — those passionate about competitive programming, trying to get through technical interviews, or hoping to apply what they learn in their algorithms class — come together and solve problems! Each week, we host informative presentations on various topics in data structures and algorithms, including the divide and conquer paradigm, dynamic programming, and greedy algorithms. We also hold practice sessions on another day of the week after the session so members can internalize the concepts we cover. Sometimes, we host friendly programming contests for our members as well!</p>
+                <Col className="aboutParagraphBG">
+                <div className="aboutParagraph">
+                    <p className="px-5">ACM@UCI is UCI's official competitive programming club, where coders of all kinds — those passionate about competitive programming, trying to get through technical interviews, or hoping to apply what they learn in their algorithms class — come together and solve problems! Each week, we host informative presentations on various topics in data structures and algorithms. We also hold practice sessions on another day of the week after the session so members can internalize the concepts we cover. Sometimes, we host friendly programming contests for our members as well!</p>
                 </div>
-                <div style={{backgroundColor: "#3e3f40", height: "2vh"}}></div>
                 </Col>
             </div>
             <div className="spacing-y-2"></div>
@@ -124,12 +123,23 @@ function CenterImage() {
             <h1>DBH 3011</h1>
             
             </div>
-            <div className="spacing-y-10"></div>
+            <div className="spacing-y-3"></div>
         </div>
 
     )
 }
 
+export default function Home() {
+    return(
+        <div>
+        <CenterImage></CenterImage>
+        <AboutACM></AboutACM>
+        <ExtraInfo></ExtraInfo>
+        </div>
+    )
+}
+
+/*
 export default function Home() {
     const [scrolledUp, setScrolledUp] = useState(false);
 
@@ -174,3 +184,4 @@ export default function Home() {
         </div>
     )
 }
+*/
