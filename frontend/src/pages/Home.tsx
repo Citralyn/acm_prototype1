@@ -14,28 +14,28 @@ function ExtraInfo() {
                 <h1>Learn &#128218;</h1>
                 <div className="specialExtra">
                     <p>New to competitive programming, but not sure where to start?</p>
-                    <Button>Read More</Button>
+                    <Button as="a" href="#learn">Read More</Button>
                 </div>
                 </Col>
                 <Col className="extraContent bg-color-blue">
                 <h1>Practice &#128187;</h1>
                 <div className="specialExtra">
                     <p>Can’t get enough DSA and want a formal problem set to practice?</p>
-                    <Button>View Problems</Button>
+                    <Button as="a" href="#practice">View Problems</Button>
                 </div>
                 </Col>
                 <Col className="extraContent bg-color-green">
                 <h1>Compete &#127942;</h1>
                 <div className="specialExtra">
                     <p>Interested in competing in ICPC or IEEExtreme? Ready to take home worlds?</p>
-                    <Button>Read More</Button>
+                    <Button as="a" href="#compete">Read More</Button>
                 </div>
                 </Col>
                 <Col className="extraContent bg-color-yellow">
                 <h1>Board &#128106;</h1>
                 <div className="specialExtra">
                     <p>Curious about who’s behind ACM? Interested in applying for a board position yourself?</p>
-                    <Button>View Staff</Button>
+                    <Button as="a" href="#board">View Staff</Button>
                 </div>
                 </Col>
             </Row>

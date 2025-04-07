@@ -88,6 +88,7 @@ $color-map: (
     font-family: "Cutive Mono", monospace;
     margin-left: 8vw;
     margin-right: 8vw;
+    font-family: "VT323", monospace;
 }
 .extraSection {
     width: 100vw;
@@ -153,6 +154,10 @@ $color-map: (
     visibility: visible;
     opacity: 1;
   }
+
+.generalBG {
+    background-color: black;
+}
   
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

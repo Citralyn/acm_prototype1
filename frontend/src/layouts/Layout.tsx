@@ -15,37 +15,15 @@ export default function Layout() {
             <Navbar.Toggle aria-controls="acm-navbar-nav" />
             <Navbar.Collapse id="acm-navbar-nav">
                 <Nav className="text-center">
-                    <Nav.Link className="nav-font" href="/">
-                        Home
-                    </Nav.Link>
-                    <NavDropdown
-                        title="About"
-                        className="nav-font"
-                        style={{ color: '#6DB6E2' }}
-                    >
-                        <NavDropdown.Item href="/about">
-                            About Us
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="/board">
-                            Our Board
-                        </NavDropdown.Item>
-                    </NavDropdown>
-                    {/* <Nav.Link className="nav-font" href="/events">Events</Nav.Link> */}
-                    <Nav.Link className="nav-font" href="/Puzzle">
-                        Problems
-                    </Nav.Link>
-                    <Nav.Link className="nav-font" href="/introToCP">
-                        New Members
-                    </Nav.Link>
-                    <Nav.Link className="nav-font" href="/contact">
-                        Contact Us
-                    </Nav.Link>
-                    {/* Plan: restrict access to UCI students only. */}
-                    <Nav.Link className="nav-font" href="/login">
-                        Login
-                    </Nav.Link>
+                    <Nav.Link href="/">Home</Nav.Link>
+                    <Nav.Link href="#learn">Learn</Nav.Link>
+                    <Nav.Link href="#practice">Practice</Nav.Link>
+                    <Nav.Link href="#compete">Compete</Nav.Link>
+                    <Nav.Link href="#board">Board</Nav.Link>
+                    
                     <Nav.Link
                         className="nav-font"
+                        target="_blank"
                         href="https://discord.gg/MCtKPxC"
                     >
                         <svg
@@ -62,7 +40,8 @@ export default function Layout() {
                     </Nav.Link>
                     <Nav.Link
                         className="nav-font"
-                        href="https://github.com/ACM-UCI/ACM-UCI-Website/issues"
+                        target="_blank"
+                        href="https://github.com"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
