@@ -13,7 +13,7 @@ export default function Layout() {
             <Navbar.Toggle aria-controls="acm-navbar-nav" />
             <Navbar.Collapse id="acm-navbar-nav">
                 <Nav className="text-center">
-                    <Nav.Link href="/">Home</Nav.Link>
+                    <Nav.Link href="#">Home</Nav.Link>
                     <Nav.Link href="#learn">Learn</Nav.Link>
                     <Nav.Link href="#practice">Practice</Nav.Link>
                     <Nav.Link href="#compete">Compete</Nav.Link>
