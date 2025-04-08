@@ -1,7 +1,6 @@
 import { Outlet } from "react-router"
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from "react-bootstrap/NavDropdown";
 import Image from "react-bootstrap/Image";
 
 export default function Layout() {
@@ -9,8 +8,7 @@ export default function Layout() {
     <div>
 <Navbar expand="lg" className="bg-body-tertiary">
             <Navbar.Brand className="nav-brand" href="#">
-            &nbsp;<Image src="acm_logo.svg"></Image>
-                ACM @ UCI
+            &nbsp;<Image src="acm_logo.svg"></Image>ACM @ UCI
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="acm-navbar-nav" />
             <Navbar.Collapse id="acm-navbar-nav">

@@ -27,6 +27,20 @@ h1 {
     }
   }
 
+.grey-boxes {
+    background-color: black;
+}
+@for $i from 1 through 10 {
+    .grey-box-#{$i} {
+        background-color: slateblue;
+        width: 4vw;
+        height: 5vh + 2 * (10 - $i);
+        margin-top: (5vh + 2 * (9 - $i)) + 10 - $i;
+        /* lol definitely a better solution for this
+        // another time then */ 
+    }
+}
+
 $color-map: (
     classic-red: #cf3e34,
     classic-blue: #4c83ba,

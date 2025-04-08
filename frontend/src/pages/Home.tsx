@@ -1,6 +1,7 @@
 import Image from "react-bootstrap/Image";
 //import { motion } from 'framer-motion';
 //import { useState, useEffect } from 'react';
+import Container from "react-bootstrap/Container"; 
 import Col from "react-bootstrap/Col"; 
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button"
@@ -48,7 +49,7 @@ function AboutACM() {
 
     return(
         <div className="aboutSection">
-            <div className="spacing-y-4"></div>
+            <div className="spacing-y-2"></div>
             <h1 className="whatIsHeader">What is&nbsp; 
                 <span className="specialTitle">
                     <span className="txt-color-classic-blue letter" full-expansion="Association">
@@ -129,10 +130,27 @@ function CenterImage() {
     )
 }
 
+function GreyBoxes() {
+    return (
+        <div className="grey-boxes">
+
+        <div className="spacing-y-2"></div>
+        <Row className="justify-content-center">
+          {Array.from({ length: 10 }, (_, index) => (
+            <Col key={index + 1} xs={1}>
+                <div className={`rounded grey-box-${index + 1}`}></div>
+            </Col>
+          ))}
+        </Row>
+        </div>
+    );
+  };
+
 export default function Home() {
     return(
         <div>
         <CenterImage></CenterImage>
+        <GreyBoxes/>
         <AboutACM></AboutACM>
         <ExtraInfo></ExtraInfo>
         </div>
