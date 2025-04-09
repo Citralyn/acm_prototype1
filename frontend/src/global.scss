@@ -2,6 +2,7 @@ html {
     overflow-x: hidden;
 }
 
+
 #acm-navbar-nav {
     display: flex;
     justify-content: end;
@@ -32,12 +33,15 @@ h1 {
 }
 @for $i from 1 through 10 {
     .grey-box-#{$i} {
-        background-color: slateblue;
-        width: 4vw;
+        background-color: #225380;
+        width: 8vw;
         height: 5vh + 2 * (10 - $i);
-        margin-top: (5vh + 2 * (9 - $i)) + 10 - $i;
+        margin-top: pow(1.4, (10 - $i)) * 1vh; 
         /* lol definitely a better solution for this
         // another time then */ 
+    }
+    .grey-box-#{$i}:hover {
+        background-color: #4a9bd9;
     }
 }
 

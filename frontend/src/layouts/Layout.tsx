@@ -8,7 +8,8 @@ export default function Layout() {
     <div>
 <Navbar expand="lg" className="bg-body-tertiary">
             <Navbar.Brand className="nav-brand" href="#">
-            &nbsp;<Image src="acm_logo.svg"></Image>ACM @ UCI
+            &nbsp;<Image src="acm_logo.svg"></Image>
+            ACM @ UCI
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="acm-navbar-nav" />
             <Navbar.Collapse id="acm-navbar-nav">
